@@ -4,13 +4,7 @@ Der Workshop führt in das Thema Data Collection ein. Dabei sollen Techniken ver
 
 ## Anmeldung
 
-Zur Anmeldung schickt bitte eine Email an Philipp mit vollem Namen, Studienfach und Semester an [workshop@pbehrendt.eu](mailto:workshop@pbehrendt.eu). Bitte gebt bei der Anmeldung an, welches der unten beschriebenen Themen ihr besprechen wollt.
-
-#### Advanced Web Scraping
-
-#### Datenmanagement
-
-#### OpenStreetMap API
+Zur Anmeldung schickt bitte eine Email an Philipp mit vollem Namen, Studienfach und Semester an [workshop@pbehrendt.eu](mailto:workshop@pbehrendt.eu).
 
 ## Vorraussetzungen
 
@@ -83,8 +77,8 @@ Um zu testen, ob ihr noch auf aktuellem Stand seid, könnt ihr gerne das [Arbeit
 
 #### 13:00 Pause
 
-#### 14:00 Wahlthema (Advanced Web Scraping/Datenmanagement)
+#### 14:00 Mini Package für Image Classification
 
-#### 15:00 *Aufgabenblog 6*
+#### 14:45 *Aufgabenblog 6*
 
-#### 16:00 Biergarten :tada:
+#### 16:30 Biergarten :tada:
