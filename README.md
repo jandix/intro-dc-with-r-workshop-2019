@@ -21,21 +21,37 @@ Um zu testen, ob ihr noch auf aktuellem Stand seid, könnt ihr gerne das [Arbeit
 #### 10:00 Arbeitsumgebung einrichten und Packages installieren
 
 - Unterschied R und RStudio
-- Kurze Einführung RStudio
+- Kurze Tour durch RStudio
   - Projekte
 - Packages installieren
 
 #### 11:30 Pause
 
-12:00 Kurze Wiederholung (Datentypen, Loops, If-Else)
-13:00 Aufgabenblog 1
-13:30 Pause
-14:30 Daten einlesen und speichern (CSV, JSON, RDS)
-15:15 Aufgabenblog 2
-15:45 Pause
-16:00 News-API
-16:30 Aufgabenblog 3
-17:30 Biergarten
+#### 12:00 Kurze Wiederholung von R Basics
+
+- Datentypen
+- Kontrollstrukturen (If-Else)
+- Schleifen (For/While)
+
+#### 13:00 *Aufgabenblog 1*
+
+#### 13:30 Pause
+
+#### 14:30 Daten einlesen und speichern
+
+- Überblick Dateitypen
+- CSV
+- RDS
+
+#### 15:15 *Aufgabenblog 2*
+
+#### 15:45 Pause
+
+#### 16:00 News API
+
+#### 16:30 *Aufgabenblog 3* 
+
+#### 17:30 Biergarten :tada:
 
 Tag 2 (Samstag, 15. Juni)
 
