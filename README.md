@@ -12,7 +12,7 @@ Studierende sollten entweder den R-Kurs bei PD Dr. Michael Herrmann besucht habe
 
 ## Self-Assessment
 
-Um zu testen, ob ihr noch auf aktuellem Stand seid, könnt ihr gerne das [Arbeitsblatt]() lösen. Wenn ihr dabei noch Schwierigkeiten habt, empfehlen wir euch vielleicht nochmal den Datacamp Kurs anzuschauen. Das Arbeitsblatt ist **nicht** verpflichtend.
+Um zu testen, ob ihr noch auf aktuellem Stand seid, könnt ihr gerne das [Arbeitsblatt](https://github.com/jandix/intro-dc-with-r-workshop-2019/blob/master/self_assessment/self_assessment.pdf) lösen. Wenn ihr dabei noch Schwierigkeiten habt, empfehlen wir euch vielleicht nochmal den Datacamp Kurs anzuschauen. Das Arbeitsblatt ist **nicht** verpflichtend.
 
 ## Vorrausichtlicher Zeitplan
 
