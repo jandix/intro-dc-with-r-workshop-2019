@@ -10,7 +10,8 @@ output: pdf_document
 
  
 
-Mit diesem kleinen Self Assessment könnt ihr testen, wie gut es um eure R-Skills steht und euch schonmal ein wenig             für den Workshop eingrooven. Die Lösungen zu den Aufgaben stellen wir in einer seperaten Datei zur Verfügung.
+Mit diesem kleinen Self Assessment könnt ihr testen, wie gut es um eure R-Skills steht und euch schonmal ein wenig             für den Workshop eingrooven. Die Lösungen zu den Aufgaben stellen wir in einer seperaten Datei zur Verfügung. 
+Bei der Bearbeitung könnt ihr natürlich alle möglichen Hilfsmittel benutzen (Google, StackOverflow, rHelp, etc ...). Kein Mensch kenn alle Befehle auswendig und die Hälfte unser Zeit verbringen wir selbst damit, Lösungen/Beispiele und Dokumentation aus dem Internet zusammen zu suchen. 
 
 
 ## Aufgabenteil 1
