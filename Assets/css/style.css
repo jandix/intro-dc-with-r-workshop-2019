@@ -1,0 +1,24 @@
+.gdbar img {
+  width: 325px !important;
+  height: 125px !important;
+  margin: 25px 25px !important;
+}
+
+.gdbar {
+  width: 425px !important;
+  height: 175px !important;
+}
+
+slides > slide:not(.nobackground):before {
+  width: 130px;
+  height: 50px;
+  background-size: 130px 50px;
+}
+
+h2 {
+  color: #59c7eb !important;
+}
+
+#kn-blue  {
+  color: #59c7eb !important;
+}
