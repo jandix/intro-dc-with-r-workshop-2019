@@ -1,0 +1,58 @@
+---
+title: "Self Assessment in R"
+subtitle: "An Introduction to Data Collection with R - Workshop"
+author: "Philipp Behrendt & Jan Dix"
+date:  "14.Juni 2019"
+
+output: pdf_document
+---
+
+
+ 
+
+Mit diesem kleinen Self Assessment könnt ihr testen, wie gut es um eure R-Skills steht und euch schonmal ein wenig             für den Workshop eingrooven. Die Lösungen zu den Aufgaben stellen wir in einer seperaten Datei zur Verfügung.
+
+
+## Aufgabenteil 1
+
+- Erstelle einen Vektor **x** mit den Zahlen von 1 bis 10
+- Berechne die Summe von **x** 
+- Erstelle einen Vektor **y**, der die Quadratzahlen von x enthält 
+- Füge die letzen 5 Elemente von x und die ersten 3 von y in einen neuen Vektor. Nenne diesen z. 
+- Bestimme den höchsten Wert von **z**. 
+
+
+## Aufgabenteil 2
+
+- Schreibe eine for-loop, die die Wurzeln der Zahlen 1 bis 10 ausgibt ! 
+- Speichere die Wurzeln in dem Vektor **a**
+- Erstelle einen Vektor **b**, der sich nach folgender Formel berechnet. Wenn a kleiner als 2.5 ist, nimmt er 0 an, andernfalls 1. 
+- Erstelle einen plot mit a auf der x-Achse und b auf der y-Achse 
+
+
+## Aufgabenteil 3
+
+- Erstelle die Variable **vname** mit deinem Vornamen.
+- Erstelle die Variable **nname** mit deinem Nachnamen.
+- Wie viele Buchstaben enthält dein Vorname. 
+- Extrahiere den ersten Buchstaben deines Vornames (Tipp: substr)
+- Extrahiere die letzen 3 Buchstaben deines Nachnamens. 
+- Füge den ersten Buchstaben deines Vornames und die letzten drei Buchstaben deines Nachnamens zusammen und speicher es in **kuerzel**. 
+- Transformiere **kuerzel** in Großbuchstaben. 
+
+
+## Aufgabenteil 4 
+
+Lade den [Iris-Datensatz](https://en.wikipedia.org/wiki/Iris_flower_data_set) mit folgendem Befehl!
+
+```{r}
+iris <- iris
+```
+- Inspiziere den Datensatz ! 
+- Lass dir zusammenfassende Statistiken für alle Variablen ausgeben (e.g. Quartile, Mix, Max). Es bedarf nur einer Funktion!
+- Erstelle einen neuen Dataframe **setosa**, der nur die Einträge für setosa beinhaltet
+- Erstelle einen neuen Dataframe **virginica**, der nur die Einträge für virginica beinhaltet
+- Füge **setosa** und **virginica** nun zu einem neuen Dataframe **combined** *zweilenweise* zusammen.
+- Welchen Wert hat der 54. Eintrag der 2. Spalte ? Welchen der 107. Eintrag der 9. Spalte ?
+
+
