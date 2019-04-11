@@ -1,0 +1,192 @@
+---
+title: "Self Assessment in R - Lösungen "
+subtitle: "An Introduction to Data Collection with R - Workshop"
+author: "Philipp Behrendt & Jan Dix"
+date:  "14.Juni 2019"
+
+output: pdf_document
+---
+
+
+
+## Aufgabenteil 1
+
+- Erstelle einen Vektor **x** mit den Zahlen von 1 bis 10
+
+```{r}
+x <- 1:10
+```
+
+
+- Berechne die Summe von **x** 
+
+```{r}
+sum(x)
+```
+
+
+- Erstelle einen Vektor **y**, der die Quadratzahlen von x enthält 
+
+```{r}
+y <- x^2
+```
+
+
+- Füge die letzen 5 Elemente von x und die ersten 3 von y in einen neuen Vektor. Nenne diesen z. 
+
+```{r}
+z <- c(tail(x, 5), y[1:3])
+```
+
+- Bestimme den höchsten Wert von **z**. 
+
+```{r}
+max(z)
+```
+
+
+## Aufgabenteil 2
+
+- Schreibe eine for-loop, die die Wurzeln der Zahlen 1 bis 10 ausgibt ! 
+
+```{r}
+for (i in 1:10) {
+  
+  print(sqrt(i))
+
+}
+```
+
+
+- Speichere die Wurzeln in dem Vektor **a**
+
+```{r}
+
+# Erstelle den Vektor a
+a <- 0
+
+for (i in 1:10) {
+  
+  # Füll an Stelle i mit der Wurzel von i
+  a[i] <- (sqrt(i))
+  
+}
+```
+
+
+- Erstelle einen Vektor **b**, der sich nach folgender Formel berechnet. Wenn a kleiner als 2.5 ist, nimmt er 0 an, andernfalls 1. 
+
+```{r}
+
+# Erstelle den Vektor a
+b <- ifelse(a < 2.5, 0, 1)
+```
+
+- Erstelle einen plot mit a auf der x-Achse und b auf der y-Achse 
+
+```{r}
+
+# Erstelle den Vektor a
+plot(a, b)
+```
+
+
+## Aufgabenteil 3
+
+- Erstelle die Variable **vname** mit deinem Vornamen.
+
+```{r}
+vname <- "Marianne"
+```
+
+
+- Erstelle die Variable **nname** mit deinem Nachnamen.
+
+```{r}
+nname <- "Musterfrau"
+```
+
+
+- Wie viele Buchstaben enthält dein Vorname. 
+
+```{r}
+nchar(vname)
+```
+
+
+- Extrahiere den ersten Buchstaben deines Vornames (Tipp: substr)
+
+```{r}
+substr(vname, 1, 1)
+```
+
+- Extrahiere die letzen 3 Buchstaben deines Nachnamens. 
+
+```{r}
+substr(nname, nchar(nname) - 2, nchar(nname))
+```
+
+- Füge den ersten Buchstaben deines Vornames und die letzten drei Buchstaben deines Nachnamens zusammen und speicher es in **kuerzel**. 
+
+```{r}
+kuerzel <- paste0(substr(vname, 1, 1), 
+                  substr(nname, nchar(nname) - 2, nchar(nname)))
+```
+
+- Transformiere **kuerzel** in Großbuchstaben. 
+
+
+```{r}
+toupper(kuerzel)
+```
+
+
+## Aufgabenteil 4 
+
+Lade den [Iris-Datensatz](https://en.wikipedia.org/wiki/Iris_flower_data_set) mit folgendem Befehl!
+
+```{r}
+iris <- iris
+```
+- Inspiziere den Datensatz ! 
+
+```{r}
+View(iris) # alternativ kannst du iris im Global enviroment anklicken
+```
+
+
+- Lass dir zusammenfassende Statistiken für alle Variablen ausgeben (e.g. Quartile, Mix, Max). Es bedarf nur einer Funktion!
+```{r}
+summary(iris)
+```
+
+- Erstelle einen neuen Dataframe **setosa**, der nur die Einträge für setosa beinhaltet
+
+```{r}
+setosa <- iris[iris$Species == "setosa",  ]
+```
+
+
+- Erstelle einen neuen Dataframe **virginica**, der nur die Einträge für virginica beinhaltet
+
+```{r}
+virginica <- iris[iris$Species == "virginica",  ]
+```
+
+- Füge **setosa** und **virginica** nun zu einem neuen Dataframe **combined** *zweilenweise* zusammen.
+
+```{r}
+combined <- rbind(setosa, virginica)
+```
+
+
+- Welchen Wert hat der 54. Eintrag der 2. Spalte ? Welchen der 107. Eintrag der 9. Spalte ?
+
+```{r}
+combined[54, 2] 
+combined[107, 9] # out of range  
+
+
+```
+
+
