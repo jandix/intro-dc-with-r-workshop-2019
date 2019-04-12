@@ -58,7 +58,7 @@ for (i in 1:10) {
 ```
 
 
-- Speichere die Wurzeln in dem Vektor **a**
+- Modifiziere deine for-loop so, dass du die Wurzel nicht printest, sondern einen Vektor **a** sukzezive befüllst
 
 ```{r}
 
@@ -114,23 +114,22 @@ nchar(vname)
 ```
 
 
-- Extrahiere den ersten Buchstaben deines Vornames (Tipp: substr)
+- Extrahiere den ersten Buchstaben deines Vornames und speicher ihn unter **acro** (Tipp: substr)
 
 ```{r}
-substr(vname, 1, 1)
+acro <- substr(vname, 1, 1)
 ```
 
-- Extrahiere die letzen 3 Buchstaben deines Nachnamens. 
+- Extrahiere die letzen 3 Buchstaben deines Nachnamens und speicher sie unter **nym**. 
 
 ```{r}
-substr(nname, nchar(nname) - 2, nchar(nname))
+nym <- substr(nname, nchar(nname) - 2, nchar(nname))
 ```
 
-- Füge den ersten Buchstaben deines Vornames und die letzten drei Buchstaben deines Nachnamens zusammen und speicher es in **kuerzel**. 
+- Füge **acro** und **nym** zusammen  speicher es in **kuerzel**.
 
 ```{r}
-kuerzel <- paste0(substr(vname, 1, 1), 
-                  substr(nname, nchar(nname) - 2, nchar(nname)))
+kuerzel <- paste0(acro, nym)
 ```
 
 - Transformiere **kuerzel** in Großbuchstaben. 

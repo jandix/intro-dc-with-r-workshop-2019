@@ -25,8 +25,8 @@ Bei der Bearbeitung könnt ihr natürlich alle möglichen Hilfsmittel benutzen (
 
 ## Aufgabenteil 2
 
-- Schreibe eine for-loop, die die Wurzeln der Zahlen 1 bis 10 ausgibt ! 
-- Speichere die Wurzeln in dem Vektor **a**
+- Schreibe eine for-loop, die die Wurzeln der Zahlen 1 bis 10 ausgibt! 
+- Modifiziere deine for-loop so, dass du die Wurzel nicht printest, sondern einen Vektor **a** sukzezive befüllst
 - Erstelle einen Vektor **b**, der sich nach folgender Formel berechnet. Wenn a kleiner als 2.5 ist, nimmt er 0 an, andernfalls 1. 
 - Erstelle einen plot mit a auf der x-Achse und b auf der y-Achse 
 
@@ -36,9 +36,9 @@ Bei der Bearbeitung könnt ihr natürlich alle möglichen Hilfsmittel benutzen (
 - Erstelle die Variable **vname** mit deinem Vornamen.
 - Erstelle die Variable **nname** mit deinem Nachnamen.
 - Wie viele Buchstaben enthält dein Vorname. 
-- Extrahiere den ersten Buchstaben deines Vornames (Tipp: substr)
-- Extrahiere die letzen 3 Buchstaben deines Nachnamens. 
-- Füge den ersten Buchstaben deines Vornames und die letzten drei Buchstaben deines Nachnamens zusammen und speicher es in **kuerzel**. 
+- Extrahiere den ersten Buchstaben deines Vornames und speicher ihn unter **acro** (Tipp: substr)
+- Extrahiere die letzen 3 Buchstaben deines Nachnamens und speicher sie unter **nym**. 
+- Füge **acro** und **nym** zusammen  speicher es in **kuerzel**. 
 - Transformiere **kuerzel** in Großbuchstaben. 
 
 
