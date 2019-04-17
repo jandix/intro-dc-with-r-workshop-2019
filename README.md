@@ -8,7 +8,7 @@ Zur Anmeldung schickt bitte eine Email an Philipp mit vollem Namen, Studienfach 
 
 ## Vorraussetzungen
 
-Studierende sollten entweder den R-Kurs bei PD Dr. Michael Herrmann besucht haben oder den [Datacamp Introduction Kurs](https://www.datacamp.com/courses/free-introduction-to-r) abgeschlossen haben. Vergleichbare Kurse sind natürlich auch in Ordnung. Zudem sollen alle Studierende einen eigenen Laptop mitbringen und R und RStudio installiert haben. Bitte achtet dabei darauf, dass sich beide Programme auf einem aktuellen Stand befinden, da sie relativ häufig geupdatet werden. Daher funktionieren manche Befehle nicht in älteren Versionen. Ihr könnt die Programme einfach neu installieren.
+Studierende sollten entweder den R-Kurs bei PD Dr. Michael Herrmann besucht haben oder den [Datacamp Introduction Kurs](https://www.dataquest.io/course/intro-to-r/) abgeschlossen haben. Vergleichbare Kurse sind natürlich auch in Ordnung. Zudem sollen alle Studierende einen eigenen Laptop mitbringen und R und RStudio installiert haben. Bitte achtet dabei darauf, dass sich beide Programme auf einem aktuellen Stand befinden, da sie relativ häufig geupdatet werden. Daher funktionieren manche Befehle nicht in älteren Versionen. Ihr könnt die Programme einfach neu installieren.
 
 ## Self-Assessment
 
