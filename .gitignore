@@ -1,2 +1,3 @@
 # exclude R Hirstory 
 .Rhistory
+.Rproj.user

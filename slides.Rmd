@@ -1,0 +1,192 @@
+---
+title: "R und das WWW"
+subtitle: "An Introduction to Data Collection with R"
+author: "Philipp Behrendt & Jan Dix"
+date: "14.-15. Juni 2019"
+output: 
+  ioslides_presentation:
+    slide_level: 2
+    logo: ./assets/img/logo-uni.png
+    widescreen: true
+    css: ./assets/css/style.css
+---
+
+# Agenda
+## Tag 1 - 14. Juni {.smaller}
+10:00 Arbeitsumgebung einrichten und Packages installieren
+
+11:30 `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
+
+12:00 Kurze Wiederholung von R Basics 
+
+13:00 _Aufgabenblog 1_
+
+13:30 `r emo::ji("pizza")` `r emo::ji("pizza")` `r emo::ji("pizza")`
+
+14:30 Daten einlesen & speichern
+
+15:00 _Aufgabenblog 2_
+
+15:45 `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
+
+16:00 APIs
+
+16:30 _Aufgabenblog 3_
+
+## Tag 2 - 15. Juni {.smaller}
+
+10:00 Web Scraping
+
+10:45 _Aufgabenblog 4_
+
+11:30 `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
+
+12:00 Daten zusammenführen
+
+12:30 _Aufgabenblog 5_
+
+13:00  `r emo::ji("pizza")` `r emo::ji("pizza")` `r emo::ji("pizza")`
+
+14:00 Mini Package 
+
+14:45 _Aufgabenblog 6_
+
+
+# Arbeitsumgebung einrichten
+
+## R versus RStudio
+
+- R ist eine Programmiersprache, wie z.B. Python, Java oder C++
+- RStudio ist Integrated Development Environment (IDE)
+- RStudio hilft uns besseren R Code zu schreiben
+- RStudio stellt viele Tools bereit z.B. automatisch Daten einlesen oder R Projekte
+- R funktioniert auch ohne RStudio, aber RStudio **nicht** ohne R
+
+## R Projekte  {.smaller}
+
+- der Start von jedem neuen Projekt
+- automatisches Arbeitverzeichnis (`setwd()`)
+- alle Pfade sind relativ
+
+```
+./
+  |- 01-read.R
+  |- 02-collection.R
+  |- 03-cleaning.R
+  |- 04-analysis.R
+  |- 05-plot.R
+  |- data/
+     |- soep.csv
+     |- mdbs.rds
+     |- step-1.rds
+  |- helper/
+     |- download-mdbs.R
+  |- plots/
+     |- histogramm-age.pdf
+     |- mdbs-party.pdf
+```
+
+## Packages installieren
+
+- **tidyverse**: "The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures." (tidyverse Website, 2019)
+
+- **newsanchor**: "newsanchor provides a wrapper for https://newsapi.org/. News API is a simple HTTP REST API for searching and retrieving live articles from all over the web. You can get breaking news headlines, and search for articles from over 30,000 news sources and blogs." (newsanchor Docs, 2019)
+
+- **htmltab**: "HTML tables are a valuable data source but extracting and recasting these data into a useful format can be tedious. This package allows to collect structured information from HTML tables." (htmltab docs, 2019)
+
+```{r, eval=FALSE}
+packages <- c("tidyverse", "newsanchor", "htmltab")
+install.packages(packages)
+```
+
+# `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
+
+# R Basics
+
+## Primitive Datentypen
+
+```{r, eval=FALSE}
+# character
+name <- "Jane"
+
+# numeric
+pi <- 2.1415
+
+# integer
+x <- 5L
+```
+
+## Komplexe Datentypen
+
+```{r, eval=FALSE}
+# vector
+vector <- c(2, 3, 4, 5, 6)
+
+# list
+person <- list(name = "Jane",
+               age = 24)
+
+# data frame
+persons <- data.frame(name = c("Jane", "Joe"),
+                      age = c(24, 22),
+                      stringsAsFactors = FALSE)
+```
+
+## Subsetting
+
+## Kontrollstrukturen 1 {.smaller}
+
+```{r}
+age <- 21
+if (age >= 18) {
+  print(emo::ji("beer"))
+} else {
+  print(emo::ji("no_entry"))
+}
+```
+
+```{r}
+age <- 15
+if (age >= 18) {
+  print(emo::ji("beer"))
+} else {
+  print(emo::ji("no_entry"))
+}
+```
+
+## Kontrollstrukturen 2
+
+```{r, results="hold"}
+ages <- c(18, 17, 21, 22, 16, 15, 19)
+test <- ifelse(ages >= 18, emo::ji("beer"), emo::ji("no_entry"))
+ages
+test
+```
+
+## For-Schleife
+
+```{r}
+numbers <- c(1, 2, 3, 4, 5)
+for (number in numbers) {
+  print(number^2)
+}
+```
+
+## Aufgaben #1
+
+1. Erstelle einen Vektor k mit den Werten `1`, `32`, `76`, `12` und `45`.
+2. Schreibe eine For-Schleife, die die Quadratwurzeln (`sqrt()`) des Vektors `k` ausgibt.
+
+# `r emo::ji("pizza")` `r emo::ji("pizza")` `r emo::ji("pizza")`
+
+# Daten einlesen & speichern
+
+# Aufgaben #2
+
+# `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
+
+# APIs
+
+# Aufgaben 3
+
+
