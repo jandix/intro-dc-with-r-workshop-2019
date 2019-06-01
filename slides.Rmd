@@ -269,6 +269,10 @@ _Alle Datensätze liegen im Ordner `data`._
 
 ## APIs (2)
 
+```{r, out.width="100%", echo=FALSE}
+knitr::include_graphics("./assets/img/api.jpg")
+```
+
 ## News API & newsanchor package
 
 - [newsapi.org](newsapi.org)
@@ -283,7 +287,7 @@ library(newsanchor)
 ```
 
 
-# Aufgaben 3
+## Aufgaben 3
 
 1. Suche nach den US-amerikanischen Zeitungen, die mit der News 
 API verfügbar sind.
@@ -291,4 +295,103 @@ API verfügbar sind.
 Synonyme im newsanchor package raus.
 3. Wähle eine:n Politiker:in aus dem `senator` Datensatz und suche alle
 verfügbaren Artikeln innerhalb der gewählten Tageszeitungen raus.
+
+# Web Scraping
+
+## Web Scraping (1)
+
+## htmltab
+
+```{r, eval=FALSE}
+# package laden
+library(htmltab)
+
+# URL definieren
+url <- ""
+
+# tabelle herunterladen
+
+```
+
+## rvest
+
+```{r, eval=FALSE}
+# package laden
+library(rvest)
+
+```
+
+## Aufgabe 4
+
+1. Lade x herunter
+
+# `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
+
+# Daten zusammenführen
+
+## Daten zusammenführen
+
+## dplyr
+
+```{r, eval=FALSE}
+library(dplyr) # wird automatisch im tidyverse geladen
+
+# rbind
+
+# cbind
+
+# daten joinen
+left_join()
+right_join()
+```
+
+
+## Aufgabe 5
+
+1. Füge x und y zusammen.
+
+# `r emo::ji("pizza")` `r emo::ji("pizza")` `r emo::ji("pizza")`
+
+# Mini Package
+
+## Steps
+
+```{r, out.width="100%", echo=FALSE}
+knitr::include_graphics("./assets/img/api-process.jpg")
+```
+
+## Code
+
+```{r, eval=FALSE}
+# packages laden
+library(httr)
+library(jsonlite)
+
+# url definieren
+url <- ""
+
+# "get" anfrage senden
+response <- httr::GET(url)
+
+# check anfrage
+httr::http_error(response)
+
+# parse content
+content <- httr::content(response, type = "text")
+parsed_content <- jsonlite::fromJSON(content)
+```
+
+
+## How to write a function?
+
+```{r, eval=FALSE}
+multiply <- function (x, y) {
+  z <- x * y
+  return(z)
+} 
+```
+
+
+## Aufgabe 6
+
 
