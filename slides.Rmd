@@ -59,7 +59,8 @@ output:
 - R ist eine Programmiersprache, wie z.B. Python, Java oder C++
 - RStudio ist Integrated Development Environment (IDE)
 - RStudio hilft uns besseren R Code zu schreiben
-- RStudio stellt viele Tools bereit z.B. automatisch Daten einlesen oder R Projekte
+- RStudio stellt viele Tools bereit z.B. automatisch Daten einlesen oder 
+R Projekte
 - R funktioniert auch ohne RStudio, aber RStudio **nicht** ohne R
 
 ## R Projekte  {.smaller}
@@ -175,18 +176,119 @@ for (number in numbers) {
 ## Aufgaben #1
 
 1. Erstelle einen Vektor k mit den Werten `1`, `32`, `76`, `12` und `45`.
-2. Schreibe eine For-Schleife, die die Quadratwurzeln (`sqrt()`) des Vektors `k` ausgibt.
+2. Schreibe eine For-Schleife, die die Quadratwurzeln 
+(`sqrt()`) des Vektors `k` ausgibt.
 
 # `r emo::ji("pizza")` `r emo::ji("pizza")` `r emo::ji("pizza")`
 
 # Daten einlesen & speichern
 
-# Aufgaben #2
+## CSV (1)
+
+```{r, out.width="80%", echo=FALSE}
+knitr::include_graphics("./assets/img/csv.png")
+```
+
+- jede Zeile in der Datei entspricht einer Zeile im Datensatz
+- Spalten werden mit Hilfe eines sogenannten Seperators/Delimiter 
+getrennt (z.B.: Komma, Semicolon)
+- **Vorteil**: kann von fast allen Prgrammen gelesen werden
+- **Nachteil**: relativ langsam bei großen Datensätzen
+
+## CSV (2)
+
+```{r, eval=FALSE}
+library(readr) # wird automatisch im tidyverse geladen
+
+# csv innerhalb eines projekts einlesen
+mdbs <- read_csv("./data/mdbs.csv")
+
+# csv schreiben
+```
+
+
+## Excel (1)
+
+```{r, out.width="70%", echo=FALSE}
+knitr::include_graphics("./assets/img/xlsx.png")
+```
+
+- **Vorteil**: Daten können von Hand erstellt werden
+- **Nachteil**: Daten und Metadaten werden nicht sauber getrennt; propritäres Format
+
+## Excel (2)
+
+```{r, eval=FALSE}
+library(readxl) # wird automatisch im tidyverse geladen
+
+# xls/xlsx innerhalb eines projekts einlesen
+social_media <- read_xlsx("./data/social_media.xlsx")
+
+# excel datei schreiben
+```
+
+
+## RDS (1)
+
+- speichern und laden von R Objekten, wie sie im Arbeitspeicher liegen
+- **Vorteil**: sehr schnell schreiben und laden; exaktes Abbild
+- **Nachteil**: kann nur in R geöffnet werden
+
+## RDS (2)
+
+```{r, eval=FALSE}
+library(readr) # wird automatisch im tidyverse geladen
+
+# rds innerhalb eines projekts einlesen
+gender <- read_rds("./data/gender.rds")
+
+# rds innerhalb eines projekts schreiben
+write_rds(gender, "./data/gender2.rds")
+
+# rds mit kompression (hilfreich wenn man daten per mail senden will)
+write_rds(gender, "./data/gender_compressed.rds", compress = "gz")
+```
+
+
+## Aufgaben #2
+
+1. Lese den Datensatz `senators.csv` ein und speicher den Datensatz in der 
+Variable `senators`.
+2. Lese den Datensatz `senators_sm.xls` ein und speicher den Datensatz in
+der Variable `social_media`.
+3. Lese den Datensatz `senators_gender.rds` ein und speicher den Datensatz in
+der Variable `gender`.
+
+_Alle Datensätze liegen im Ordner `data`._
 
 # `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
 
 # APIs
 
+## APIs (1)
+
+## APIs (2)
+
+## News API & newsanchor package
+
+- [newsapi.org](newsapi.org)
+
+```{r, eval=FALSE}
+# package laden
+library(newsanchor)
+
+# api token speichern
+
+# daten zum suchbegriff donald trump herunterlanden
+```
+
+
 # Aufgaben 3
 
+1. Suche nach den US-amerikanischen Zeitungen, die mit der News 
+API verfügbar sind.
+2. Wähle die drei größten Tageszeitungen aus und suche die entsprechenden
+Synonyme im newsanchor package raus.
+3. Wähle eine:n Politiker:in aus dem `senator` Datensatz und suche alle
+verfügbaren Artikeln innerhalb der gewählten Tageszeitungen raus.
 
