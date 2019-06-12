@@ -3498,7 +3498,7 @@ articles &lt;- get_everything(query = &quot;Donald Trump&quot;)
 <ol>
 <li>Suche nach den US-amerikanischen Zeitungen, die mit der News API verfügbar sind.</li>
 <li>Wähle die drei größten Tageszeitungen aus und suche die entsprechenden Synonyme im newsanchor package raus.</li>
-<li>Wähle eine:n Politiker:in aus dem <code>senators</code> Datensatz und suche alle verfügbaren Artikeln in englischer Sprache innerhalb der gewählten Tageszeitungen raus zwischen dem 03. Juni und dem 09. Juni.</li>
+<li>Wähle eine:n Politiker:in aus dem <code>senators</code> Datensatz und suche alle verfügbaren Artikeln in englischer Sprache innerhalb der gewählten Tageszeitungen raus zwischen dem 03. Juni und dem 09. Juni. Speicher den result_df unter <code>my_favourite_senator</code> ab ! Wir werden ihn später brauchen …</li>
 </ol>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Web Scraping</h2></hgroup><article  id="web-scraping">
@@ -3709,7 +3709,24 @@ parsed_content &lt;- jsonlite::fromJSON(content)</pre>
   return(z)
 } </pre>
 
-</article></slide><slide class=""><hgroup><h2>Aufgabe 6</h2></hgroup><article  id="aufgabe-6"></article></slide>
+</article></slide><slide class=""><hgroup><h2>Aufgabe 6 (1)</h2></hgroup><article  id="aufgabe-6-1">
+
+<p>Wir haben wir euch eigens eine API mit dem Endpunkt auf <a href='https://imagenet.pbehrendt.eu/' title=''>https://imagenet.pbehrendt.eu/</a> aufgesetzt.</p>
+
+<p>Die API hat einen einzigen Query-Parameter (<code>url</code>), der nach einem Link zu einem Bild verlangt! &ldquo;Im Hintergrund&rdquo; taggt ein Neuronales Netzwerk dann das entsprechende Bild und gibt euch die 5 wahrscheinlichsten Tags zurück.</p>
+
+<ul>
+<li>Öffnet den Endpunkt in eurem Browser und probiert die API mit dem Link zum Bild eurer Wahl aus! Wie schlägt sich das Model ?</li>
+</ul>
+
+<p><a href='https://imagenet.pbehrendt.eu/?url=URLZUMBILDEURERWAHL' title=''>https://imagenet.pbehrendt.eu/?url=URLZUMBILDEURERWAHL</a></p>
+
+</article></slide><slide class=""><hgroup><h2>Aufgabe 6 (2)</h2></hgroup><article  id="aufgabe-6-2">
+
+<ul>
+<li><p>Nutzt nun obigen Code, um eine Funktion zu schreiben, die das Ganze für euch aus R macht. Nenne die Funktion <code>label_image</code>, die als Argument den Link zum Bild erhält.</p></li>
+<li><p>Klappt die Funktion ? Klasse ! Wende die Funktion doch einfach auf alle Image URLs aus deinem <code>my_favourite_senator</code> - Datensatz an. (Tipp: is.na() , For-Loop , cbind()). Kannst du die Daten noch zusammenfügen ?</p></li>
+</ul></article></slide>
 
 
   <slide class="backdrop"></slide>

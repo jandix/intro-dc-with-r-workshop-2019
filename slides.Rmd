@@ -373,7 +373,8 @@ API verfügbar sind.
 Synonyme im newsanchor package raus.
 3. Wähle eine:n Politiker:in aus dem `senators` Datensatz und suche alle
 verfügbaren Artikeln in englischer Sprache innerhalb der gewählten 
-Tageszeitungen raus zwischen dem 03. Juni und dem 09. Juni.
+Tageszeitungen raus zwischen dem 03. Juni und dem 09. Juni. Speicher den result_df 
+unter `my_favourite_senator` ab ! Wir werden ihn später brauchen ...
 
 # Web Scraping
 
@@ -630,6 +631,27 @@ multiply <- function (x, y) {
 ```
 
 
-## Aufgabe 6
+## Aufgabe 6 (1)
+
+Wir haben wir euch eigens eine API mit dem Endpunkt auf   [https://imagenet.pbehrendt.eu/](https://imagenet.pbehrendt.eu/)
+aufgesetzt. 
+
+Die API hat einen einzigen Query-Parameter (`url`), der nach einem Link zu einem Bild verlangt!
+  "Im Hintergrund" taggt ein Neuronales Netzwerk dann das entsprechende Bild und gibt euch die 5 wahrscheinlichsten Tags zurück.  
+
+- Öffnet den Endpunkt in eurem Browser und probiert die API mit dem Link zum Bild eurer Wahl aus!
+Wie schlägt sich das Model ? 
+
+https://imagenet.pbehrendt.eu/?url=URLZUMBILDEURERWAHL
+
+
+## Aufgabe 6 (2)
+
+- Nutzt nun obigen Code, um eine Funktion zu schreiben, die das Ganze für euch aus R macht. 
+Nenne die Funktion `label_image`, die als Argument den Link zum Bild erhält. 
+
+- Klappt die Funktion ? Klasse ! Wende die Funktion doch einfach auf alle Image URLs aus deinem
+`my_favourite_senator` - Datensatz an. (Tipp: is.na() , For-Loop , cbind()). Kannst du die Daten 
+noch zusammenfügen ? 
 
 
