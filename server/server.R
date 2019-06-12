@@ -23,4 +23,4 @@ router$handle("GET", "/", function (req, res, url = NULL) {
 }, serializer = plumber::serializer_unboxed_json())
 
 # start application
-router$run(host = "0.0.0.0", port = 9000, swagger = FALSE)
+router$run(host = "0.0.0.0", port = 9910, swagger = FALSE)

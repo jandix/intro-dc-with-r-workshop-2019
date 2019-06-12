@@ -1,0 +1,1 @@
+docker stop $(docker ps -a -q) && docker run --rm -p 9910:9910 imagenet-server
