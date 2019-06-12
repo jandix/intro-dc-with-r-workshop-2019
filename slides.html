@@ -3276,7 +3276,59 @@ persons &lt;- data.frame(name = c(&quot;Jane&quot;, &quot;Joe&quot;),
                       age = c(24, 22),
                       stringsAsFactors = FALSE)</pre>
 
-</article></slide><slide class=""><hgroup><h2>Subsetting</h2></hgroup><article  id="subsetting">
+</article></slide><slide class=""><hgroup><h2>Subsetting (1)</h2></hgroup><article  id="subsetting-1">
+
+<pre class = 'prettyprint lang-r'>a &lt;-  c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+a[1:3]</pre>
+
+<pre >## [1] 1 2 3</pre>
+
+<pre class = 'prettyprint lang-r'>b &lt;- c(1, 2, 3, 1, 3, 5, 7, 1, 3, 1)
+b[b == 1]</pre>
+
+<pre >## [1] 1 1 1 1</pre>
+
+<pre class = 'prettyprint lang-r'>a[b &gt;= 3]</pre>
+
+<pre >## [1] 3 5 6 7 9</pre>
+
+</article></slide><slide class=""><hgroup><h2>Subsetting (2)</h2></hgroup><article  id="subsetting-2">
+
+<pre class = 'prettyprint lang-r'>s_l_f</pre>
+
+<pre >##       Stadt      Land Fluss Einwohner
+## 1  Konstanz Kolumbien Kongo        82
+## 2 Stuttgart   Schweiz Seine        32
+## 3     Essen   Estland  Elbe        56</pre>
+
+<ul>
+<li>mit eckigen Klammern können wir uns Werte an bestimmten Stelle ausgaben lassen. Wollen wir alle Werte, so lassen wir die Dimension frei</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'># df[row, column]
+s_l_f[1, ]</pre>
+
+<pre >##      Stadt      Land Fluss Einwohner
+## 1 Konstanz Kolumbien Kongo        82</pre>
+
+</article></slide><slide class=""><hgroup><h2>Subsetting (3)</h2></hgroup><article  id="subsetting-3">
+
+<ul>
+<li><i class="fa fa-exclamation-triangle "></i> Bedingung immer nur auf der Reihe, <strong>nie</strong> auf der Spalte</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'># df[Bedingung, ]
+s_l_f[s_l_f$Einwohner &gt; 50, ]</pre>
+
+<pre >##      Stadt      Land Fluss Einwohner
+## 1 Konstanz Kolumbien Kongo        82
+## 3    Essen   Estland  Elbe        56</pre>
+
+<pre class = 'prettyprint lang-r'># df[Bedingung, column]
+s_l_f[s_l_f$Einwohner &gt; 60, c(&quot;Land&quot;, &quot;Fluss&quot;)]</pre>
+
+<pre >##        Land Fluss
+## 1 Kolumbien Kongo</pre>
 
 </article></slide><slide class=""><hgroup><h2>Kontrollstrukturen 1</h2></hgroup><article  class="smaller" id="kontrollstrukturen-1">
 
@@ -3326,6 +3378,8 @@ for (number in numbers) {
 <ol>
 <li>Erstelle einen Vektor k mit den Werten <code>1</code>, <code>32</code>, <code>76</code>, <code>12</code> und <code>45</code>.</li>
 <li>Schreibe eine For-Schleife, die die Quadratwurzeln (<code>sqrt()</code>) des Vektors <code>k</code> ausgibt.</li>
+<li>Erweitere die For-Schleife aus 2. folgendermaßen: Ist die Quadratwurzel kleiner als <code>5</code>, so gebe <code>hello world</code> aus , andernfalls <code>HELLO WORLD</code>.</li>
+<li>Nutze nun die vektorisierte Form (<code>ifelse</code>), um den Vektor m zu erstellen: Ist k^2 größer als 267.4, so soll m k^2 annehmen, andernfalls -3.</li>
 </ol>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>🍕 🍕 🍕</h2></hgroup><article  id="section-1">
@@ -3480,7 +3534,7 @@ white_house_down &lt;- read_html(&quot;http://www.imdb.com/title/tt2334879/&quot
 summary &lt;- html_nodes(white_house_down, &quot;.summary_text&quot;)
 summary &lt;- html_text(summary)</pre>
 
-</article></slide><slide class=""><hgroup><h2>rvest (1)</h2></hgroup><article  id="rvest-1-1">
+</article></slide><slide class=""><hgroup><h2>rvest (2)</h2></hgroup><article  id="rvest-2">
 
 <pre class = 'prettyprint lang-r'># package laden
 library(rvest)
@@ -3495,7 +3549,7 @@ image_url &lt;- html_attr(images, &quot;src&quot;)</pre>
 </article></slide><slide class=""><hgroup><h2>Aufgabe 4</h2></hgroup><article  id="aufgabe-4">
 
 <ol>
-<li>Lade x herunter</li>
+<li></li>
 </ol>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>☕ ☕ ☕</h2></hgroup><article  id="section-3">

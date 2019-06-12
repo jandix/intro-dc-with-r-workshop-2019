@@ -135,7 +135,57 @@ persons <- data.frame(name = c("Jane", "Joe"),
                       stringsAsFactors = FALSE)
 ```
 
-## Subsetting
+## Subsetting (1)
+
+```{r}
+a <-  c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+a[1:3]
+```
+```{r}
+b <- c(1, 2, 3, 1, 3, 5, 7, 1, 3, 1)
+b[b == 1]
+```
+```{r}
+a[b >= 3]
+```
+
+
+## Subsetting (2)
+
+```{r, echo=FALSE}
+s_l_f <- data.frame( Stadt = c("Konstanz", "Stuttgart", "Essen"),
+                   Land = c("Kolumbien", "Schweiz", "Estland"),
+                   Fluss = c("Kongo", "Seine", "Elbe"),
+                   Einwohner = c(82, 32, 56),
+                   stringsAsFactors = FALSE)
+```
+```{r}
+s_l_f
+```
+
+- mit eckigen Klammern können wir uns Werte an bestimmten Stelle ausgaben lassen. Wollen wir alle Werte, so lassen wir die Dimension frei
+
+```{r}
+# df[row, column]
+s_l_f[1, ]
+```
+
+
+## Subsetting (3)
+
+- <i class="fa fa-exclamation-triangle "></i> Bedingung immer nur auf der Reihe, **nie** auf der Spalte
+
+```{r}
+# df[Bedingung, ]
+s_l_f[s_l_f$Einwohner > 50, ]
+```
+
+```{r}
+# df[Bedingung, column]
+s_l_f[s_l_f$Einwohner > 60, c("Land", "Fluss")]
+```
+
+
 
 ## Kontrollstrukturen 1 {.smaller}
 
@@ -180,6 +230,11 @@ for (number in numbers) {
 1. Erstelle einen Vektor k mit den Werten `1`, `32`, `76`, `12` und `45`.
 2. Schreibe eine For-Schleife, die die Quadratwurzeln 
 (`sqrt()`) des Vektors `k` ausgibt.
+3. Erweitere die For-Schleife aus 2. folgendermaßen: Ist die
+Quadratwurzel kleiner als `5`, so gebe `hello world` aus , andernfalls
+`HELLO WORLD`. 
+4. Nutze nun die vektorisierte Form (`ifelse`), um den Vektor m zu erstellen:
+Ist k^2 größer als 267.4, so soll m k^2 annehmen, andernfalls -3.
 
 # `r emo::ji("pizza")` `r emo::ji("pizza")` `r emo::ji("pizza")`
 
