@@ -90,7 +90,7 @@ R Projekte
 ## Packages installieren
 
 ```{r, eval=FALSE}
-packages <- c("tidyverse", "newsanchor", "htmltab")
+packages <- c("tidyverse", "newsanchor", "htmltab", "readxl")
 install.packages(packages)
 ```
 
@@ -254,12 +254,14 @@ write_rds(gender, "./data/gender_compressed.rds", compress = "gz")
 
 1. Lese den Datensatz `senators.csv` ein und speicher den Datensatz in der 
 Variable `senators`.
-2. Lese den Datensatz `senators_sm.xls` ein und speicher den Datensatz in
+2. Lese den Datensatz `social_media.xls` ein und speicher den Datensatz in
 der Variable `social_media`.
-3. Lese den Datensatz `senators_gender.rds` ein und speicher den Datensatz in
-der Variable `gender`.
+3. Lese den Datensatz `political.rds` ein und speicher den Datensatz in
+der Variable `political`.
 
-_Alle Datensätze liegen im Ordner `data`._
+_Alle Datensätze liegen im Ordner `data`. Die Daten stammen aus dem 
+[legislatoR](https://github.com/saschagobel/legislatoR) Package von Sascha 
+Goebel und Simon Munzert._
 
 # `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
 
@@ -307,10 +309,10 @@ verfügbaren Artikeln innerhalb der gewählten Tageszeitungen raus.
 library(htmltab)
 
 # URL definieren
-url <- ""
+url <- "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28PPP%29_per_capita"
 
 # tabelle herunterladen
-
+gdp_per_country <- htmltab(url, which = 3)
 ```
 
 ## rvest
