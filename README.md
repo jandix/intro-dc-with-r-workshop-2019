@@ -32,6 +32,7 @@ Um zu testen, ob ihr noch auf aktuellem Stand seid, könnt ihr gerne das [Arbeit
 - Datentypen
 - Kontrollstrukturen (If-Else)
 - Schleifen (For/While)
+- Subsetting
 
 #### 13:00 *Aufgabenblog 1*
 

@@ -100,6 +100,8 @@ install.packages(packages)
 
 - **htmltab**: "HTML tables are a valuable data source but extracting and recasting these data into a useful format can be tedious. This package allows to collect structured information from HTML tables." (htmltab docs, 2019)
 
+- **readxl**: "Import excel files into R." (readxl docs, 2019)
+
 # `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
 
 # R Basics
@@ -204,6 +206,7 @@ library(readr) # wird automatisch im tidyverse geladen
 mdbs <- read_csv("./data/mdbs.csv")
 
 # csv schreiben
+write_csv(mdbs, path = "./data/mdbs_2.csv")
 ```
 
 
@@ -223,8 +226,6 @@ library(readxl) # wird automatisch im tidyverse geladen
 
 # xls/xlsx innerhalb eines projekts einlesen
 social_media <- read_xlsx("./data/social_media.xlsx")
-
-# excel datei schreiben
 ```
 
 
@@ -268,24 +269,44 @@ Goebel und Simon Munzert._
 # APIs
 
 ## APIs (1)
-
-## APIs (2)
-
-```{r, out.width="100%", echo=FALSE}
-knitr::include_graphics("./assets/img/api.jpg")
+```{r, out.width="65%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("./assets/img/api.png")
 ```
 
-## News API & newsanchor package
+## APIs (2)
+```{r, out.width="100%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("./assets/img/url.png")
+```
 
-- [newsapi.org](newsapi.org)
+**BASE URL** (Stammurl): Wer bietet den Service an?
+
+**ENDPOINT** (Endpunkt): Welchen Service möchtest du nutzten?
+
+**PARAMETER** (Query): Auf welche Daten möchtest du zugreifen? Wie sollen die 
+Daten gefiltert werden? 
+
+*Aufgabe:* Ändere den query parameter q und finde die Koordinaten für Washington 
+DC im Browser.
+
+## News API & newsanchor package
 
 ```{r, eval=FALSE}
 # package laden
 library(newsanchor)
 
 # api token speichern
+api_key <- "xxx"
+set_api_key(api_key, path = "~/.Renviron")
 
 # daten zum suchbegriff donald trump herunterlanden
+articles <- get_everything(query = "Donald Trump")
+
+# andere verfügbare funktionen
+?get_headlines
+?get_sources
+?terms_sources
+?terms_country
+?terms_language
 ```
 
 
@@ -295,8 +316,9 @@ library(newsanchor)
 API verfügbar sind.
 2. Wähle die drei größten Tageszeitungen aus und suche die entsprechenden
 Synonyme im newsanchor package raus.
-3. Wähle eine:n Politiker:in aus dem `senator` Datensatz und suche alle
-verfügbaren Artikeln innerhalb der gewählten Tageszeitungen raus.
+3. Wähle eine:n Politiker:in aus dem `senators` Datensatz und suche alle
+verfügbaren Artikeln in englischer Sprache innerhalb der gewählten 
+Tageszeitungen raus zwischen dem 03. Juni und dem 09. Juni.
 
 # Web Scraping
 
@@ -315,17 +337,44 @@ url <- "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28PPP%29_per_cap
 gdp_per_country <- htmltab(url, which = 3)
 ```
 
-## rvest
+## Selector Gadget
+
+SelectorGadget is an open source tool that makes CSS selector generation 
+and discovery on complicated sites a breeze. (Selector Gadget, 2018)
+
+[https://selectorgadget.com/](https://selectorgadget.com/)
+
+## rvest (1)
 
 ```{r, eval=FALSE}
 # package laden
 library(rvest)
 
+# webiste herunterladen
+white_house_down <- read_html("http://www.imdb.com/title/tt2334879/")
+
+# cast parsen
+summary <- html_nodes(white_house_down, ".summary_text")
+summary <- html_text(summary)
+```
+
+## rvest (2)
+
+```{r, eval=FALSE}
+# package laden
+library(rvest)
+
+# webiste herunterladen
+white_house_down <- read_html("http://www.imdb.com/title/tt2334879/")
+
+# cast parsen
+image <- html_nodes(white_house_down, ".poster img")
+image_url <- html_attr(images, "src")
 ```
 
 ## Aufgabe 4
 
-1. Lade x herunter
+1. 
 
 # `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
 
