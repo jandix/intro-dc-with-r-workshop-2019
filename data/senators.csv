@@ -1,0 +1,106 @@
+"","country","pageid","wikidataid","wikititle","name","sex","ethnicity","religion","birth","death","birthplace","deathplace"
+"1","USA-S",367103,"Q59315","Patrick_Leahy","Patrick Leahy","male","white","catholicism",1940-03-31,NA,"44.26586,-72.57174",NA
+"2","USA-S",215956,"Q723896","Thad_Cochran","Thad Cochran","male","white","protestantism baptist",1937-12-07,NA,"34.2486,-89.0067",NA
+"3","USA-S",168932,"Q381157","Orrin_Hatch","Orrin Hatch","male","white","protestantism restorationism",1934-03-22,NA,"-32.05361,115.97056",NA
+"4","USA-S",375263,"Q529294","Chuck_Grassley","Chuck Grassley","male","white","protestantism baptist",1933-09-17,NA,"42.56722,-92.62139",NA
+"5","USA-S",350567,"Q355522","Mitch_McConnell","Mitch McConnell","male","white","protestantism baptist",1942-02-20,NA,"34.73084,-87.70285",NA
+"6","USA-S",375231,"Q472254","Richard_Shelby","Richard Shelby","male","white","protestantism reformed",1934-05-06,NA,"33.52475,-86.81274",NA
+"7","USA-S",43715,"Q10390","John_McCain","John McCain","male","white","protestantism",1936-08-29,2018-08-25,"9.37262,-79.8812","34.7161,-111.91"
+"8","USA-S",224672,"Q230733","Dianne_Feinstein","Dianne Feinstein","female","white","judaism",1933-06-22,NA,"37.76667,-122.43333",NA
+"9","USA-S",380802,"Q723134","Jim_Inhofe","James Inhofe","male","white","protestantism reformed",1934-11-17,NA,"41.59083,-93.62083",NA
+"10","USA-S",181042,"Q258825","Patty_Murray","Patty Murray","female","white","catholicism",1950-10-11,NA,"47.6,-122.31667",NA
+"11","USA-S",340569,"Q371031","Jon_Kyl","Jon Kyl","male","white","protestantism reformed",1942-04-25,NA,"41.835,-96.46611",NA
+"12","USA-S",172827,"Q529344","Ron_Wyden","Ron Wyden","male","white","judaism",1949-05-03,NA,"37.68889,-97.33611",NA
+"13","USA-S",375234,"Q358443","Jeff_Sessions","Jeff Sessions","male","white","protestantism methodist",1946-12-24,NA,"32.41,-87.02",NA
+"14","USA-S",335005,"Q434804","Dick_Durbin","Dick Durbin","male","white","catholicism",1944-11-21,NA,"38.61556,-90.12778",NA
+"15","USA-S",363280,"Q538375","Pat_Roberts","Pat Roberts","male","white","protestantism methodist",1936-04-20,NA,"39.04833,-95.67804",NA
+"16","USA-S",375195,"Q22279","Susan_Collins","Susan Collins","female","white","catholicism",1952-12-07,NA,"46.86361,-67.99806",NA
+"17","USA-S",367115,"Q528979","Jack_Reed_(Rhode_Island_politician)","Jack Reed","male","white","catholicism",1949-11-12,NA,"41.83083,-71.415",NA
+"18","USA-S",381742,"Q432431","Mike_Enzi","Michael Enzi","male","white","protestantism reformed",1944-02-01,NA,"47.57,-122.6525",NA
+"19","USA-S",381736,"Q734319","Mike_Crapo","Mike Crapo","male","white","protestantism restorationism",1951-05-20,NA,"43.38,-111.6",NA
+"20","USA-S",326708,"Q380900","Chuck_Schumer","Chuck Schumer","male","white","judaism",1950-11-23,NA,"40.69278,-73.99028",NA
+"21","USA-S",367105,"Q22360","Lisa_Murkowski","Lisa Murkowski","female","white","catholicism",1957-05-22,NA,"55.35,-131.67333",NA
+"22","USA-S",339186,"Q457432","Tom_Carper","Tom Carper","male","white","protestantism reformed",1947-01-23,NA,"37.77972,-81.18306",NA
+"23","USA-S",363272,"Q358437","Bill_Nelson","Bill Nelson","male","white","protestantism reformed",1942-09-29,NA,"25.78333,-80.21667",NA
+"24","USA-S",335844,"Q241092","Debbie_Stabenow","Debbie Stabenow","female","white","protestantism methodist",1950-04-29,NA,"43.98083,-84.48639",NA
+"25","USA-S",335068,"Q719568","John_Cornyn","John Cornyn","male","white","protestantism reformed",1952-02-02,NA,"29.76278,-95.38306",NA
+"26","USA-S",333605,"Q22250","Maria_Cantwell","Maria Cantwell","female","white","catholicism",1958-10-13,NA,"39.76778,-86.15806",NA
+"27","USA-S",363279,"Q22212","Lindsey_Graham","Lindsey Graham","male","white","protestantism baptist",1955-07-09,NA,"34.72389,-82.77972",NA
+"28","USA-S",296724,"Q419976","Lamar_Alexander","Lamar Alexander","male","white","protestantism reformed",1940-07-03,NA,"35.74972,-83.97556",NA
+"29","USA-S",411739,"Q130024","Johnny_Isakson","Johnny Isakson","male","white","protestantism methodist",1944-12-28,NA,"33.75694,-84.39028",NA
+"30","USA-S",694313,"Q888132","Bob_Menendez","Bob Menendez","male","hispanic","catholicism",1954-01-01,NA,NA,NA
+"31","USA-S",850170,"Q331278","Richard_Burr","Richard Burr","male","white","protestantism methodist",1955-11-30,NA,"38.0299,-78.479",NA
+"32","USA-S",1003249,"Q462981","John_Thune","John Thune","male","white","protestantism evangelical",1961-01-07,NA,"44.36797,-100.33638",NA
+"33","USA-S",414532,"Q723295","Ben_Cardin","Ben Cardin","male","white","judaism",1943-10-05,NA,"39.28639,-76.615",NA
+"34","USA-S",1596343,"Q22237","Amy_Klobuchar","Amy Klobuchar","female","white","protestantism reformed",1960-05-25,NA,"45.01056,-93.45556",NA
+"35","USA-S",417439,"Q390491","Roger_Wicker","Roger Wicker","male","white","protestantism baptist",1951-07-05,NA,"34.2486,-89.0067",NA
+"36","USA-S",1043236,"Q22260","Claire_McCaskill","Claire McCaskill","female","white","catholicism",1953-07-24,NA,"37.94889,-91.76306",NA
+"37","USA-S",1922917,"Q529351","Jon_Tester","Jon Tester","male","white","protestantism evangelical",1956-08-21,NA,"48.54528,-109.6775",NA
+"38","USA-S",7811761,"Q381880","Sherrod_Brown","Sherrod Brown","male","white","protestantism lutheran",1952-11-09,NA,"40.75486,-82.52286",NA
+"39","USA-S",30875653,"Q887841","Bob_Casey_Jr.","Bob Casey, Jr.","male","white","catholicism",1960-04-13,NA,"41.40897,-75.66241",NA
+"40","USA-S",2600365,"Q652066","Sheldon_Whitehouse","Sheldon Whitehouse","male","white",NA,1955-10-20,NA,"40.72833,-73.99417",NA
+"41","USA-S",5238791,"Q331719","Bob_Corker","Bob Corker","male","white","protestantism reformed",1952-08-24,NA,"33.49694,-80.86222",NA
+"42","USA-S",361176,"Q359442","Bernie_Sanders","Bernie Sanders","male","white","judaism",1941-09-08,NA,"40.69278,-73.99028",NA
+"43","USA-S",11793401,"Q720521","John_Barrasso","John Barrasso","male","white","protestantism reformed",1952-07-21,NA,"40.34167,-75.92611",NA
+"44","USA-S",20926639,"Q554792","Michael_Bennet","Michael Bennet","male","white",NA,1964-11-28,NA,"28.7,77.2",NA
+"45","USA-S",2782602,"Q923242","Chris_Coons","Chris Coons","male","white",NA,1963-09-09,NA,"41.03889,-73.61389",NA
+"46","USA-S",2238030,"Q721871","Jim_Risch","Jim Risch","male","white","catholicism",1943-05-03,NA,"43.05,-87.95",NA
+"47","USA-S",251879,"Q319084","Al_Franken","Al Franken","male","white","judaism",1951-05-21,NA,"40.72833,-73.99417",NA
+"48","USA-S",299820,"Q270316","Jeanne_Shaheen","Jeanne Shaheen","female","white",NA,1947-01-28,NA,"38.78861,-90.51167",NA
+"49","USA-S",699307,"Q957690","Tom_Udall","Tom Udall","male","white","protestantism restorationism",1948-05-18,NA,"32.22167,-110.92639",NA
+"50","USA-S",6778068,"Q22222","Kirsten_Gillibrand","Kirsten Gillibrand","female","white","catholicism",1966-12-09,NA,"42.65,-73.76667",NA
+"51","USA-S",7921812,"Q1368405","Jeff_Merkley","Jeff Merkley","male","white","protestantism lutheran",1956-10-24,NA,"43.02694,-123.28222",NA
+"52","USA-S",13295044,"Q453893","Mark_Warner","Mark Warner","male","white","protestantism reformed",1954-12-15,NA,"39.76778,-86.15806",NA
+"53","USA-S",1240654,"Q538868","Joe_Manchin","Joe Manchin","male","white","catholicism",1947-08-24,NA,"39.51306,-80.25194",NA
+"54","USA-S",408553,"Q1344707","John_Boozman","John Boozman","male","white",NA,1950-12-10,NA,"32.50821,-93.76296",NA
+"55","USA-S",959147,"Q2023708","Richard_Blumenthal","Richard Blumenthal","male","white","judaism",1946-02-13,NA,"40.69278,-73.99028",NA
+"56","USA-S",5502549,"Q324546","Marco_Rubio","Marco Rubio","male","hispanic","catholicism",1971-05-28,NA,"25.78333,-80.21667",NA
+"57","USA-S",5293799,"Q1827902","Brian_Schatz","Brian Schatz","male","white","judaism",1972-10-20,NA,"42.27528,-83.73083",NA
+"58","USA-S",408584,"Q1365787","Jerry_Moran","Jerry Moran","male","white","protestantism methodist",1954-05-29,NA,"38.3644,-98.7647",NA
+"59","USA-S",11914121,"Q463557","Rand_Paul","Rand Paul","male","white","protestantism reformed",1963-01-07,NA,"40.45,-80",NA
+"60","USA-S",706931,"Q1525924","Roy_Blunt","Roy Blunt","male","white","protestantism baptist",1950-01-10,NA,"37.3889,-92.8311",NA
+"61","USA-S",6530356,"Q251763","Dean_Heller","Dean Heller","male","white",NA,1960-05-10,NA,"37.71,-122.06",NA
+"62","USA-S",288299,"Q374762","John_Hoeven","John Hoeven","male","white","catholicism",1957-03-13,NA,"46.81333,-100.77889",NA
+"63","USA-S",703464,"Q926069","Rob_Portman","Rob Portman","male","white","protestantism methodist",1955-12-19,NA,"39.13333,-84.5",NA
+"64","USA-S",650226,"Q971308","Pat_Toomey","Pat Toomey","male","white","catholicism",1961-11-17,NA,"41.83083,-71.415",NA
+"65","USA-S",27658059,"Q561315","Tim_Scott","Tim Scott","male","black","protestantism evangelical",1965-09-19,NA,"32.77611,-79.9325",NA
+"66","USA-S",25708300,"Q627098","Mike_Lee_(American_politician)","Mike Lee","male","white","protestantism restorationism",1971-06-04,NA,"33.415,-111.83139",NA
+"67","USA-S",28036647,"Q970272","Ron_Johnson_(Wisconsin_politician)","Ron Johnson","male","white","protestantism lutheran",1955-04-08,NA,"44.16767,-94.0034",NA
+"68","USA-S",407926,"Q929581","Jeff_Flake","Jeff Flake","male","white","protestantism restorationism",1962-12-31,NA,"34.51111,-110.08306",NA
+"69","USA-S",4995141,"Q1077594","Chris_Murphy","Chris Murphy","male","white",NA,1973-08-03,NA,"41.04,-73.77861",NA
+"70","USA-S",715545,"Q16476","Mazie_Hirono","Mazie Hirono","female","asian",NA,1947-11-03,NA,"37.76083,140.47333",NA
+"71","USA-S",6767747,"Q1691395","Joe_Donnelly","Joe Donnelly","male","white",NA,1955-09-29,NA,"40.70417,-73.91778",NA
+"72","USA-S",496707,"Q544464","Angus_King","Angus King","male","white","anglicanism",1944-03-31,NA,"38.80472,-77.04722",NA
+"73","USA-S",290195,"Q434706","Elizabeth_Warren","Elizabeth Warren","female","white","protestantism",1949-06-22,NA,"35.4823,-97.5352",NA
+"74","USA-S",440819,"Q1282411","Ed_Markey","Ed Markey","male","white","catholicism",1946-07-11,NA,"42.425,-71.06667",NA
+"75","USA-S",4472401,"Q2580649","Deb_Fischer","Deb Fischer","female","white",NA,1951-03-01,NA,"40.81056,-96.68028",NA
+"76","USA-S",2130120,"Q1135767","Cory_Booker","Cory Booker","male","black","protestantism baptist",1969-04-27,NA,"38.895,-77.03667",NA
+"77","USA-S",10636471,"Q565374","Martin_Heinrich","Martin Heinrich","male","white","protestantism lutheran",1971-10-17,NA,"39.4728,-118.779",NA
+"78","USA-S",476686,"Q50597","Heidi_Heitkamp","Heidi Heitkamp","female","white","catholicism",1955-10-30,NA,"46.26361,-96.58806",NA
+"79","USA-S",2500271,"Q2036942","Ted_Cruz","Ted Cruz","male","hispanic",NA,1970-12-22,NA,"51.05,-114.06667",NA
+"80","USA-S",1461855,"Q359888","Tim_Kaine","Tim Kaine","male","white","catholicism",1958-02-26,NA,"44.94417,-93.09361",NA
+"81","USA-S",409034,"Q40628","Tammy_Baldwin","Tammy Baldwin","female","white",NA,1962-02-11,NA,"43.07472,-89.38444",NA
+"82","USA-S",24332024,"Q5218668","Dan_Sullivan_(U.S._senator)","Dan Sullivan","male","white",NA,1964-11-13,NA,"41.4417,-81.8575",NA
+"83","USA-S",33938394,"Q3090307","Tom_Cotton","Tom Cotton","male","white","protestantism methodist",1977-05-13,NA,"35.2225,-93.16028",NA
+"84","USA-S",28683302,"Q1135774","Cory_Gardner","Cory Gardner","male","white","protestantism lutheran",1974-08-22,NA,"40.12278,-102.725",NA
+"85","USA-S",43088478,"Q17402717","David_Perdue","David Perdue","male","white","protestantism methodist",1949-12-10,NA,"32.83583,-83.64639",NA
+"86","USA-S",30991069,"Q13475242","Joni_Ernst","Joni Ernst","female","white","protestantism lutheran",1970-07-01,NA,"41.01167,-95.22722",NA
+"87","USA-S",9386382,"Q861999","Bill_Cassidy","Bill Cassidy","male","white",NA,1957-09-28,NA,"42.1825,-87.80694",NA
+"88","USA-S",12690010,"Q1494930","Gary_Peters","Gary Peters","male","white","anglicanism",1958-12-01,NA,"42.64611,-83.2925",NA
+"89","USA-S",16031304,"Q3200900","Steve_Daines","Steve Daines","male","white",NA,1962-08-20,NA,"34.1833,-118.4333",NA
+"90","USA-S",39692887,"Q16192221","Ben_Sasse","Ben Sasse","male","white","protestantism lutheran",1972-02-22,NA,"42.35278,-97.78722",NA
+"91","USA-S",29699016,"Q7786750","Thom_Tillis","Thom Tillis","male","white","catholicism",1960-08-30,NA,"30.31667,-81.65",NA
+"92","USA-S",27380096,"Q45940","James_Lankford","James Lankford","male","white",NA,1968-03-04,NA,"32.7825,-96.7975",NA
+"93","USA-S",375373,"Q722503","Mike_Rounds","Mike Rounds","male","white","catholicism",1954-10-24,NA,"44.35917,-98.21806",NA
+"94","USA-S",408054,"Q459618","Shelley_Moore_Capito","Shelley Moore Capito","female","white","protestantism reformed",1953-11-26,NA,"39.94917,-80.75417",NA
+"95","USA-S",32473713,"Q6705642","Luther_Strange","Luther Strange","male","white",NA,1953-03-01,NA,"33.52475,-86.81274",NA
+"96","USA-S",54074020,"Q30122825","Doug_Jones_(politician)","Doug Jones","male","white",NA,1954-05-04,NA,"33.47667,-86.91667",NA
+"97","USA-S",3120522,"Q10853588","Kamala_Harris","Kamala Harris","female","asian","protestantism baptist",1964-10-20,NA,"37.8,-122.25",NA
+"98","USA-S",3691615,"Q3036410","Tammy_Duckworth","Tammy Duckworth","female","asian",NA,1968-03-12,NA,"13.75,100.51667",NA
+"99","USA-S",29303304,"Q25483","Todd_Young","Todd Young","male","white",NA,1972-08-24,NA,"40.03972,-76.30444",NA
+"100","USA-S",6024062,"Q6250211","John_Kennedy_(Louisiana_politician)","John Kennedy","male","white","protestantism methodist",1951-11-21,NA,"31.0858,-91.065",NA
+"101","USA-S",414579,"Q1077819","Chris_Van_Hollen","Chris Van Hollen","male","white","anglicanism",1959-01-10,NA,"24.86,67.01",NA
+"102","USA-S",44307500,"Q18631509","Tina_Smith","Tina Smith","female","white",NA,1958-03-04,NA,"35.11667,-106.61667",NA
+"103","USA-S",16180456,"Q5120540","Cindy_Hyde-Smith","Cindy Hyde-Smith","female","white","protestantism baptist",1959-05-10,NA,"31.58194,-90.44306",NA
+"104","USA-S",11822552,"Q5052604","Catherine_Cortez_Masto","Catherine Cortez Masto","female","hispanic",NA,1964-03-29,NA,"36.16917,-115.14472",NA
+"105","USA-S",13396981,"Q24053","Maggie_Hassan","Maggie Hassan","female","white",NA,1958-02-27,NA,"42.35778,-71.06167",NA
