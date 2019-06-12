@@ -260,7 +260,7 @@ library(readr) # wird automatisch im tidyverse geladen
 # csv innerhalb eines projekts einlesen
 mdbs <- read_csv("./data/mdbs.csv")
 
-# csv schreiben
+# csv schreiben 
 write_csv(mdbs, path = "./data/mdbs_2.csv")
 ```
 
@@ -379,6 +379,11 @@ Tageszeitungen raus zwischen dem 03. Juni und dem 09. Juni.
 
 ## Web Scraping (1)
 
+
+Web Scraping means collecting information from websites by extracting them 
+directly from the HTML source code
+
+
 ## htmltab
 
 ```{r, eval=FALSE}
@@ -429,7 +434,8 @@ image_url <- html_attr(images, "src")
 
 ## Aufgabe 4
 
-1. 
+1. Lade die Tabelle über alle Senatoren des 115. Senats herunter 
+[https://en.wikipedia.org/wiki/List_of_members_of_the_United_States_Senate](https://en.wikipedia.org/wiki/List_of_members_of_the_United_States_Senate)
 
 # `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
 
@@ -437,24 +443,150 @@ image_url <- html_attr(images, "src")
 
 ## Daten zusammenführen
 
-## dplyr
+Oftmals stehen wir vor der Aufgabe, Daten aus unterschiedlichen Quellen zusammenzuführen. 
+Je nach Anforderung, gibt es mehrere Methoden: 
 
-```{r, eval=FALSE}
+- `rbind`
+- `cbind`
+- `merging / joining`
+
+## R(ow)-bind (1)
+
+- Verknüpft zwei Dataframes entlang ihrer Zeilen
+
+```{r, eval= T, echo = FALSE}
+
+df1 <- data.frame( Stadt = c("Konstanz", "Stuttgart", "Essen"),
+                   Land = c("Kolumbien", "Schweiz", "Estland"),
+                   Fluss =c("Kongo", "Seine", "Elbe"))
+
+```
+
+
+```{r, eval= T,}
+
+df1 
+
+```
+
+```{r, eval= T, echo = FALSE}
+df2 <- data.frame( Stadt = c("München", "Hamburg"),
+                   Land = c("Mali", "Haiti"),
+                   Fluss =c("Moldau", "Havel"))
+
+```
+
+
+```{r, eval= T,}
+
+df2 
+
+```
+
+
+
+## R(ow)-bind (2)
+
+```{r, eval= T,}
+
+df_rbind <- rbind(df1, df2)
+df_rbind
+
+```
+
+
+
+## C(olum)-bind (1)
+- Verknüpft zwei Dataframes entlang ihrer Spalten
+
+```{r, eval= T, echo = FALSE}
+
+df3 <- data.frame( Name =  c("Kevin", "Sabine", "Eduard", "Mike", "Heidi"),
+                   Tier= c("Kuh", "Schaf", "Esel","Möwe", "Hund"),
+                   Beruf= c("Koch","Schriftstellerin", "Erzieher", "Maurer", "Headhunter"))
+
+```
+
+```{r, eval= T,}
+
+df3 
+
+```
+
+
+
+## C(olum)-bind (2)
+
+```{r, eval= T,}
+
+df_cbind <-  cbind(df_rbind,df3)
+df_cbind
+
+```
+
+
+## Merging (1)
+
+- Verknüpfung von zwei Datensätzen mittels einer oder mehrerer Variablen
+
+```{r, out.width = "100%",echo=FALSE}
+knitr::include_graphics("assets/img/merge.jpg")
+```
+
+
+
+## Merging (2)
+
+```{r, eval= T, echo = FALSE}
+
+df_purchase <- data.frame( Customer_ID =  c(1,1,2,3),
+                   Product= c("Tablet", "Phone", "Laptop", "Clock"),
+                   Price= c(249, 760, 1200,300))
+
+```
+
+```{r, eval= T,}
+
+df_purchase 
+
+```
+
+```{r, eval= T, echo = FALSE}
+
+df_income <- data.frame( Customer_ID =  c(2,3,1,4),
+                   Income= c(3600,750,1200,1800))
+
+```
+
+```{r, eval= T,}
+
+df_income 
+
+```
+
+
+## Merging (3)
+
+```{r, eval= T, message=FALSE}
+
 library(dplyr) # wird automatisch im tidyverse geladen
 
-# rbind
+transparent_customer <- left_join(df_purchase, df_income, by = "Customer_ID")
 
-# cbind
 
-# daten joinen
-left_join()
-right_join()
+transparent_customer
+
 ```
 
 
 ## Aufgabe 5
 
-1. Füge x und y zusammen.
+1. Lade nochmals die Datensätze `senators.csv`,`social_media.xls`, `political.rds`. 
+2. Inspiziere die Variablen und überlegen, anhand welcher Variablen/Keys, man die Datensätze 
+verbinden könnte. 
+3. Wir möchten alle Informationen über die Senatoren (115. Senat) in einem einzigen Datensatz. 
+Führe dazu zwei left_joins() durch! 
+
 
 # `r emo::ji("pizza")` `r emo::ji("pizza")` `r emo::ji("pizza")`
 
