@@ -96,9 +96,9 @@ install.packages(packages)
 
 - **tidyverse**: "The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures." (tidyverse Website, 2019)
 
-- **newsanchor**: "newsanchor provides a wrapper for https://newsapi.org/. News API is a simple HTTP REST API for searching and retrieving live articles from all over the web. You can get breaking news headlines, and search for articles from over 30,000 news sources and blogs." (newsanchor Docs, 2019)
+- **newsanchor**: "newsanchor provides a wrapper for https://newsapi.org/. News API is a simple HTTP REST API for searching and retrieving live articles from all over the web." (newsanchor Docs, 2019)
 
-- **htmltab**: "HTML tables are a valuable data source but extracting and recasting these data into a useful format can be tedious. This package allows to collect structured information from HTML tables." (htmltab docs, 2019)
+- **htmltab**: "This package allows to collect structured information from HTML tables." (htmltab docs, 2019)
 
 - **readxl**: "Import excel files into R." (readxl docs, 2019)
 
