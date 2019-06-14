@@ -438,6 +438,8 @@ image_url <- html_attr(images, "src")
 1. Lade die Tabelle über alle Senatoren des 115. Senats herunter 
 [https://en.wikipedia.org/wiki/List_of_members_of_the_United_States_Senate](https://en.wikipedia.org/wiki/List_of_members_of_the_United_States_Senate)
 
+2. Lade den Artikel [https://www.nytimes.com/2019/06/14/world/middleeast/oil-tanker-attack-gulf-oman.html](https://www.nytimes.com/2019/06/14/world/middleeast/oil-tanker-attack-gulf-oman.html) herunter und extrahiere den Text mit Hilfe von rvest.
+
 # `r emo::ji("coffee")` `r emo::ji("coffee")` `r emo::ji("coffee")`
 
 # Daten zusammenführen
@@ -599,15 +601,33 @@ Führe dazu zwei left_joins() durch!
 knitr::include_graphics("./assets/img/api-process.jpg")
 ```
 
-## Code
+## Code (1)
 
 ```{r, eval=FALSE}
 # packages laden
 library(httr)
 library(jsonlite)
 
+# image url definieren
+image <- ""
+
 # url definieren
-url <- ""
+url <- "imagnet.pbehrendt.eu"
+
+# url parsen
+url <- httr::parse_url(url)
+
+```
+
+## Code 2
+
+```{r, eval=FALSE}
+
+# add query
+url$query <- list(url = image)
+
+# build url
+url <- httr::build_url(url)
 
 # "get" anfrage senden
 response <- httr::GET(url)
@@ -623,11 +643,12 @@ parsed_content <- jsonlite::fromJSON(content)
 
 ## How to write a function?
 
-```{r, eval=FALSE}
+```{r, eval=TRUE}
 multiply <- function (x, y) {
   z <- x * y
   return(z)
 } 
+multiply(2, 3)
 ```
 
 
