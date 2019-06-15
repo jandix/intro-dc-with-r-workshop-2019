@@ -437,6 +437,9 @@ image_url <- html_attr(images, "src")
 
 1. Lade die Tabelle über alle Senatoren des 115. Senats herunter 
 [https://en.wikipedia.org/wiki/List_of_members_of_the_United_States_Senate](https://en.wikipedia.org/wiki/List_of_members_of_the_United_States_Senate)
+2. Scrape die Ämter und deren Beschreibung von der folgenden Website
+[https://www.senate.gov/pagelayout/history/one_item_and_teasers/officers.htm](https://www.senate.gov/pagelayout/history/one_item_and_teasers/officers.htm) mit Hilfe von rvest. Hint: Lade die
+Website einmal runter und scrape Amtnamen und Beschreibung seperat.
 
 2. Lade den Artikel [https://www.nytimes.com/2019/06/14/world/middleeast/oil-tanker-attack-gulf-oman.html](https://www.nytimes.com/2019/06/14/world/middleeast/oil-tanker-attack-gulf-oman.html) herunter und extrahiere den Text mit Hilfe von rvest.
 
